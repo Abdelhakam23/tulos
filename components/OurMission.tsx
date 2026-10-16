@@ -43,22 +43,22 @@ const OurMission = () => {
               </p>
             </div>
 
-            {/* <div className="bg-background border border-border rounded-md p-6 text-center hover:border-primary/30 transition-colors">
+            <div className="bg-background border border-border rounded-md p-6 text-center hover:border-primary/30 transition-colors">
               <p className="text-3xl font-black text-foreground mb-1 tabular-nums">
-                2020
+                4.9 ★
               </p>
               <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">
-                Founded
+                Avg. Rating
               </p>
             </div>
             <div className="bg-background border border-border rounded-md p-6 text-center hover:border-primary/30 transition-colors">
               <p className="text-3xl font-black text-foreground mb-1 tabular-nums">
-                2020
+                2%
               </p>
               <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">
-                Founded
+                Return Rate
               </p>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
