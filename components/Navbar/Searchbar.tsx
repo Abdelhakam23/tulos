@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, X } from "lucide-react";
+import { Loader2, Search, X } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -98,7 +98,10 @@ const SearchBar = () => {
         <div className="border-t overflow-y-auto px-4 w-full h-full ">
           <div className="text-center py-5 tracking-wide">
             {loading ? (
-              <p> Searching For Product....</p>
+              <p className="flex items-center justify-center text-base font-semibold text-green-600 gap-1.5">
+                {" "}
+                <Loader2 className="animate-spin w-5 h-5" /> Searching For Product....
+              </p>
             ) : product.length ? (
               <div className=" px-1 flex flex-col gap-2.5 items-start text-left">
                 {product?.map((item, index) => (
