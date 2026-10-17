@@ -1,5 +1,4 @@
 import { termsAndConditions } from "@/constants";
-import { FileText } from "lucide-react";
 import Link from "next/link";
 
 const TermsPage = () => {
@@ -17,8 +16,8 @@ const TermsPage = () => {
             </h1>
             <p className="max-w-2xl leading-relaxed  text-muted-foreground">
               These terms govern your use of the Tulos platform. Please read
-              them carefully before using our services. Last updated: February
-              2025.
+              them carefully before using our services. Last updated:
+              <span className="text-primary font-semibold">October 2026.</span>
             </p>
           </div>
         </div>
@@ -49,14 +48,14 @@ const TermsPage = () => {
             ))}
             <div className="border border-border bg-muted/30 text-center p-5 rounded-2xl   ">
               <p className="text-sm text-muted-foreground">
-                Questions about our terms?{" "}
+                Have a privacy concern?{" "}
                 <Link
                   href={"/support"}
                   className="text-primary font-semibold hover:underline"
                 >
-                  Contact our support team
+                  Contact our Privacy Officer
                 </Link>{" "}
-                — we're happy to clarify anything.
+                and we'll respond within 48 hours.
               </p>
             </div>
           </div>

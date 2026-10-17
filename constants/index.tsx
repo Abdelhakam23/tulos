@@ -2,11 +2,15 @@ import { FooterData } from "@/types/types";
 import {
   Ban,
   BoxIcon,
+  ChartNoAxesColumn,
   CircleQuestionMarkIcon,
   Clock,
+  Cookie,
+  Database,
   FileText,
   Globe,
   HeartHandshake,
+  Lock,
   Mail,
   MapPin,
   PackageCheck,
@@ -16,6 +20,7 @@ import {
   Share2,
   ShieldAlert,
   ShieldCheck,
+  UserCheck,
   Users,
   VanIcon,
   Zap,
@@ -257,5 +262,38 @@ export const termsAndConditions = [
     icon: <Globe className="w-4 h-4" />,
     title: "Governing Law",
     term: "These Terms and Conditions shall be governed by and interpreted in accordance with the laws of the jurisdiction in which Tulos operates. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of those courts.",
+  },
+];
+
+export const privacyPolicy = [
+  {
+    icon: <Database className="w-4 h-4" />,
+    title: "Information We Collect",
+    term: "We collect information you voluntarily provide — such as your name, email, shipping address, and payment details — when you register, place an order, or contact us. We also automatically collect device and usage data (IP address, browser type, pages visited) to improve our services.",
+  },
+  {
+    icon: <ChartNoAxesColumn className="w-4 h-4" />,
+    title: "How We Use Your Information",
+    term: "We use your data to process orders, personalise your experience, send transactional emails and relevant promotions (with your consent), detect fraud, and comply with legal obligations. We never sell your data to third parties for their own marketing purposes.",
+  },
+  {
+    icon: <Share2 className="w-4 h-4" />,
+    title: "Information Sharing",
+    term: "We may share your data with trusted service providers (payment processors, delivery partners, analytics tools) strictly to operate our platform. All third parties are contractually obligated to protect your data and use it only as instructed by us.",
+  },
+  {
+    icon: <Lock className="w-4 h-4" />,
+    title: "Data Security",
+    term: "We implement industry-standard security measures including TLS encryption, access controls, and regular security audits to protect your personal information. However, no method of transmission over the internet is 100% secure — if you suspect a breach, contact us immediately.",
+  },
+  {
+    icon: <Cookie className="w-4 h-4" />,
+    title: "Cookies & Tracking",
+    term: "We use essential cookies to operate the site, performance cookies to understand usage patterns, and optional marketing cookies to deliver relevant ads. You can manage your cookie preferences at any time through your browser settings or our cookie banner.",
+  },
+  {
+    icon: <UserCheck className="w-4 h-4" />,
+    title: "Your Rights",
+    term: "You have the right to access, correct, download, or delete your personal data at any time. You can also withdraw consent for marketing communications or request data portability. To exercise any of these rights, contact our Privacy Officer at privacy@tulos.com.",
   },
 ];
