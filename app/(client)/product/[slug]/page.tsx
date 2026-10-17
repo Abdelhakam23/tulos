@@ -19,7 +19,7 @@ const SingleProduct = async ({
     return notFound();
   }
   return (
-    <Container className="flex flex-col md:flex-row w-full gap-10 py-10 mt-20 ">
+    <Container className="flex flex-col md:flex-row w-full gap-10 py-16  ">
       <div className="w-full md:w-1/2 ">
         {product?.images && <ImageView images={product?.images} />}
       </div>

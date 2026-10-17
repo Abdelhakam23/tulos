@@ -18,7 +18,7 @@ import { ListOrdered } from "lucide-react";
 const Navbar = async () => {
   const user = await currentUser();
   return (
-    <nav className="fixed z-50 bg-white  w-full border-b border-b-gray-400 py-5">
+    <nav className="sticky  z-50 bg-background top-0   border-b border-b-gray-400 py-5">
       <Container className="flex items-center justify-between gap-7 text-lightColor">
         <div className="hidden md:flex">
           <NavbarMenu />

@@ -1,15 +1,20 @@
 import { FooterData } from "@/types/types";
 import {
+  Ban,
   BoxIcon,
   CircleQuestionMarkIcon,
   Clock,
+  FileText,
   Globe,
   HeartHandshake,
   Mail,
   MapPin,
   PackageCheck,
   Phone,
+  RefreshCcw,
+  Scale,
   Share2,
+  ShieldAlert,
   ShieldCheck,
   Users,
   VanIcon,
@@ -219,5 +224,38 @@ export const coreValues = [
     icon: <Globe className="w-4 h-4" />,
     title: "Worldwide Reach",
     desc: "Serving customers in 50+ countries with localized experiences and global-standard logistics.",
+  },
+];
+
+export const termsAndConditions = [
+  {
+    icon: <FileText className="w-4 h-4" />,
+    title: "Acceptance of Terms",
+    term: "By accessing or using Tulos's website, mobile app, or any of our services, you agree to be bound by these Terms and Conditions in full. If you do not agree with any part, please discontinue use immediately. We may update these terms at any time — continued use after changes constitutes acceptance.",
+  },
+  {
+    icon: <ShieldAlert className="w-4 h-4" />,
+    title: "Use of Services",
+    term: "You agree to use Tulos's services solely for lawful purposes. You must not use our platform to engage in any fraudulent activity, transmit harmful content, attempt unauthorised access, or violate any applicable law or regulation. Violations may result in immediate account termination.",
+  },
+  {
+    icon: <Scale className="w-4 h-4" />,
+    title: "Intellectual Property",
+    term: "All content, branding, graphics, logos, text, and software on Tulos are the exclusive property of Tulos or its licensors and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works without prior written consent.",
+  },
+  {
+    icon: <Ban className="w-4 h-4" />,
+    title: "Limitation of Liability",
+    term: "To the maximum extent permitted by law, Tulos shall not be liable for any indirect, incidental, special, consequential, or punitive damages — including loss of profits, data, or goodwill — arising from your use of, or inability to use, our services, even if we have been advised of the possibility of such damages.",
+  },
+  {
+    icon: <RefreshCcw className="w-4 h-4" />,
+    title: "Returns & Refunds",
+    term: "Products may be returned within 30 days of delivery in their original condition. Refunds are processed within 5–7 business days after we receive and inspect the returned item. Digital products and items marked as non-returnable are excluded from this policy.",
+  },
+  {
+    icon: <Globe className="w-4 h-4" />,
+    title: "Governing Law",
+    term: "These Terms and Conditions shall be governed by and interpreted in accordance with the laws of the jurisdiction in which Tulos operates. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of those courts.",
   },
 ];

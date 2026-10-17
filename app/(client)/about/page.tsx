@@ -6,7 +6,7 @@ import StartShopping from "@/components/StartShopping";
 
 const AboutPage = () => {
   return (
-    <div className="mt-10">
+    <div>
       <OurStory />
       <OurNumbers />
       <OurMission />
