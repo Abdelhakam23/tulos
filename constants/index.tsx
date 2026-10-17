@@ -3,11 +3,17 @@ import {
   BoxIcon,
   CircleQuestionMarkIcon,
   Clock,
+  Globe,
+  HeartHandshake,
   Mail,
   MapPin,
+  PackageCheck,
   Phone,
   Share2,
+  ShieldCheck,
+  Users,
   VanIcon,
+  Zap,
 } from "lucide-react";
 import { BsTwitterX } from "react-icons/bs";
 import {
@@ -180,5 +186,38 @@ export const productFaqs = [
   {
     title: "Share",
     icon: <Share2 className="h-5 w-5" />,
+  },
+];
+
+export const coreValues = [
+  {
+    icon: <ShieldCheck className="w-4 h-4" />,
+    title: "Quality Guaranteed",
+    desc: "Every product in our catalog is carefully vetted to meet the highest standards of performance and durability.",
+  },
+  {
+    icon: <Zap className="w-4 h-4" />,
+    title: "Fast & Reliable",
+    desc: "From browsing to delivery, we're obsessed with speed. Orders are processed and dispatched within 24 hours.",
+  },
+  {
+    icon: <HeartHandshake className="w-4 h-4" />,
+    title: "Customer First",
+    desc: "We genuinely care about your experience. Our support team is always here to make things right.",
+  },
+  {
+    icon: <PackageCheck className="w-4 h-4" />,
+    title: "Transparent Pricing",
+    desc: "No hidden fees, no surprises. What you see is what you pay — fair, honest, always.",
+  },
+  {
+    icon: <Users className="w-4 h-4" />,
+    title: "Community Driven",
+    desc: "Built around real feedback from real customers. Every feature we ship comes from listening to you.",
+  },
+  {
+    icon: <Globe className="w-4 h-4" />,
+    title: "Worldwide Reach",
+    desc: "Serving customers in 50+ countries with localized experiences and global-standard logistics.",
   },
 ];
