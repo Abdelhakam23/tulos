@@ -1,3 +1,4 @@
+import OurCore from "@/components/OurCore";
 import OurMission from "@/components/OurMission";
 import OurNumbers from "@/components/OurNumbers";
 import OurStory from "@/components/OurStory";
@@ -8,6 +9,7 @@ const AboutPage = () => {
       <OurStory />
       <OurNumbers />
       <OurMission />
+      <OurCore />
     </div>
   );
 };

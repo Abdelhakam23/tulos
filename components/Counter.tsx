@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, useSpring, useTransform } from "motion/react";
 
 interface CounterProps {
   value: number;
   direction?: "up" | "down";
   suffix?: string;
-  isKFormat?: boolean; 
+  isKFormat?: boolean;
 }
 
 export default function Counter({
@@ -16,6 +16,12 @@ export default function Counter({
   suffix = "+",
   isKFormat = false,
 }: CounterProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const spring = useSpring(direction === "down" ? value : 0, {
     mass: 0.8,
     stiffness: 75,
@@ -27,12 +33,24 @@ export default function Counter({
     if (isKFormat && currentNum >= 1000) {
       return (currentNum / 1000).toFixed(0) + "K";
     }
-    return currentNum.toLocaleString();
+    // فرض استخدام الأرقام الإنجليزية لمنع تعارض الـ Hydration
+    return currentNum.toLocaleString("en-US");
   });
 
   useEffect(() => {
-    spring.set(direction === "down" ? 0 : value);
-  }, [spring, value, direction]);
+    if (isMounted) {
+      spring.set(direction === "down" ? 0 : value);
+    }
+  }, [spring, value, direction, isMounted]);
+
+  if (!isMounted) {
+    return (
+      <span>
+        {isKFormat && value >= 1000 ? (value / 1000).toFixed(0) + "K" : value}
+        {suffix}
+      </span>
+    );
+  }
 
   return (
     <span className="inline-flex items-center">
